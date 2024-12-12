@@ -1,91 +1,145 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Ultradox",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/UVMarkColor.svg",
+    "light": "/logo/UVMarkColor.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#ff936f",
+    "light": "#ff936f",
+    "dark": "#ff936f",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
     }
   },
+  "layout": "sidenav",
+  "sidebar": { "items":"border"},
+  "background": {"style":"gradient"},
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Community",
+      "url": "https://discord.gg/Qw6KHxv8YB"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.ultravox.ai"
   },
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "api-reference",
+      "openapi": "/api-reference/openapi.json"
+    },
+    {
+      "name": "SDK Reference",
+      "url": "sdk-reference"
+    },
+    {
+      "name": "Integrations",
+      "url": "integrations"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "News & Updates",
+      "icon": "circle-info",
+      "url": "TODO"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+
+      "name": "Deprecation Guide",
+      "icon": "triangle-exclamation",
+      "url": "TODO"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "guides/fivethings",
+        "guides/allprompting",
+        {
+          "group": "Quickstart",
+          "icon": "forward-fast",
+          "pages": [
+            "guides/quickstart-phone",
+            "guides/quickstart-web"
+          ]
+        }
       ]
     },
     {
       "group": "Essentials",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "essentials/es1",
+        "essentials/es2",
+        "essentials/es3",
+        "essentials/es4"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Use Cases",
       "pages": [
-        "api-reference/introduction"
+        "usecases/uc1",
+        "usecases/uc2",
+        "usecases/uc3"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Advanced Guides",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "guides/guide1",
+        "guides/guide2",
+        "guides/guide3",
+        "guides/guide4",
+        "guides/guide5",
+        "guides/guide6",
+        "guides/guide7",
+        {
+          "group": "Porting Your Voice Agent",
+          "icon": "swap",
+          "pages": [
+            "guides/porting-bland",
+            "guides/porting-oairt",
+            "guides/porting-retell",
+            "guides/porting-vapi"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "SDK",
+      "pages": [
+        "sdk-reference/introduction"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/introduction"
+      ]
+    },
+    {
+      "group": "Changelog",
+      "pages": [
+        "changelog/introduction"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://x.com/fixieai",
+    "github": "https://github.com/fixie-ai/ultravox",
+    "discord": "https://discord.gg/Qw6KHxv8YB"
   }
 }
+
+
